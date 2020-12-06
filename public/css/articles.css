@@ -1,0 +1,33 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    grid-template-rows: auto;
+    grid-template-areas: "articles sidepanel";
+    column-gap: 25px;
+}
+
+.articles {
+    display: grid;
+    grid-area: articles;
+    background-color: #fcc603;
+    padding: 5px;
+}
+
+.sidepanel {
+    grid-area: sidepanel;
+}
+
+.category{
+    margin: 2px;
+}
+
+.articles span{
+    padding-right:15px;
+    margin-top: 2px;
+}
+
+.article-header{
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+}

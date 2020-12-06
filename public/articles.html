@@ -5,14 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIA - Projekt B</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
     <link rel="stylesheet" href="./css/nav-footer.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/articles.css">
     <script src="./js/script.js"></script>
 </head>
 
@@ -40,46 +34,59 @@
 
         <main>
             <div class="main-container">
-                <div class="header">
-                    <div class="header-container">
-                        <h1>Kontakt se zákazníky je pro nás na 1. místě</h1>
-                        <p>Stejně tak jako jejich spokojenost</p>
-                    </div>
+                <div class="articles">
+                    <h1>Recenze nové RS7</h1>
+                    <p>
+                        <span>
+                            <img src="https://img.icons8.com/pastel-glyph/14/000000/clock--v1.png" />
+                            1.12.2020
+                        </span>
+                        <span>
+                            <img src="https://img.icons8.com/cotton/16/000000/person-male--v2.png" />
+                            Expert Jenda
+                        </span>
+                        <span>
+                            <img src="https://img.icons8.com/material-sharp/16/000000/tags.png" />
+                            Recenze, Novinky
+                        </span>
+                        <img class="article-header" src="./img/rs7-article-header.jpg">
+                        <p>
+                            Podařilo se nám získat k internímu testování novou 600 koňovou bestii z Ingolstadtu. V
+                            článku se podíváme jízdní vlastnosti, výbavu a srovnání s konkurencí. Více...
+                        </p>
+                    </p>
+                    <h1>Byl odhalen e-tron GT</h1>
+                    <p>
+                        <span>
+                            <img src="https://img.icons8.com/pastel-glyph/14/000000/clock--v1.png" />
+                            7.12.2020
+                        </span>
+                        <span>
+                            <img src="https://img.icons8.com/cotton/16/000000/person-male--v2.png" />
+                            Expert Jenda
+                        </span>
+                        <span>
+                            <img src="https://img.icons8.com/material-sharp/16/000000/tags.png" />
+                            Novinky, Koncept, Elektromobilita
+                        </span>
+                        <img class="article-header" src="./img/etron-article-header.jpg">
+                        <p>
+                            Podařilo se nám získat k internímu testování novou 600 koňovou bestii z Ingolstadtu. V
+                            článku se podíváme jízdní vlastnosti, výbavu a srovnání s konkurencí. Více...
+                        </p>
+                    </p>
                 </div>
-                <div class="map">
-                    <div class="map-container" id="myMap">
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contact-container">
-                        <div class="contact-form">
-                            <h2>Buďme v kontaktu!</h2>
-                            <p>
-                                Naším cílem je poskytovat jen ty nejlepší služby v oblasti prodeje automobilů, abyste na
-                                den nákupu Vašeho nového vozu rádi vzpomínali a v případě další koupě se opět s plnou
-                                důvěrou obrátili právě na nás.
-                            </p>
-                            <div>
-                                <form action="" onsubmit="">
-                                    <label for="ta"><strong>Jméno</strong></label><br>
-                                    <input required type="text" name="" id="" placeholder="Jméno"><br>
-                                    <label for="ta"><strong>E-mail</strong></label><br>
-                                    <input required type="email" name="" id="" placeholder="E-mail"><br>
-                                    <label for="ta"><strong>Zpráva</strong></label><br>
-                                    <textarea required name="ta" id="ta" cols="50" rows="7"></textarea><br>
-                                    <button type="submit">Odeslat</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="contact-info">
-                            <h2>Kde nás najdete?</h2>
-                            <p>
-                                17. listopadu 2172/15, 708 00 Ostrava <br>
-                                +420 123 456 789 <br>
-                                adam.smieja.st@vsb.cz <br>
-                            </p>
-                        </div>
-                    </div>
+                <div class="sidepanel">
+                    <input type="text" placeholder="Hledat"><br>
+                    <h3>Kategorie</h3>
+                    <p class="category">Recenze</p>
+                    <p class="category">Novinky</p>
+                    <p class="category">Chystáme pro Vás</p>
+                    <h3>O autorovi</h3>
+                    <p>Autorem článků je náš expert Jenda, který se autožurnalistikou zabývá již více než 20 let.</p>
+                    <h3>Nejnovější články</h3>
+                    <p>Recenze nové RS7</p>
+                    <p>Byl odhalen e-tron GT</p>
                 </div>
             </div>
         </main>
