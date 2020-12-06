@@ -6,11 +6,12 @@
     column-gap: 25px;
 }
 
-.articles {
+.article {
     display: grid;
     grid-area: articles;
     background-color: #fcc603;
     padding: 5px;
+    margin: 15px 0px;
 }
 
 .sidepanel {
