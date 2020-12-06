@@ -2,16 +2,14 @@ html,
 body {
     padding: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
 }
 
 .container {
     display: grid;
     column-gap: 1px;
     row-gap: 1px;
-    grid-template-columns: .5fr 5fr .5fr;
-    grid-template-rows: 1fr 12fr 2fr;
+    grid-template-columns: .3fr 5fr .3fr;
+    grid-template-rows: 1fr 6fr 2fr;
     grid-template-areas: "sidebar-left nav sidebar-right" "sidebar-left main sidebar-right" "sidebar-left footer sidebar-right"
 }
 
@@ -25,8 +23,8 @@ body {
 .main-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr 2fr 3fr 2fr;
-    grid-template-areas: "header" "content" "gallery" "links";
+    grid-template-rows: 4fr 2fr 2fr;
+    grid-template-areas: "header" "content" "gallery";
 }
 
 .header-container {
@@ -90,6 +88,55 @@ body {
     font-size: 1vw;
     font-weight: bold;
     border-color: white;
+}
+
+#signup {
+    background-color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    margin: 1.4em 0em;
+    color: #000000;
+    font-family: Arial;
+    font-size: 0.9vw;
+    font-weight: bold;
+    border-color: white;
+}
+
+#newsletter-signup {
+    font-size: 0.9vw;
+}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #fcc603;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
 }
 
 .nav {
@@ -202,10 +249,90 @@ body {
 
 .gallery {
     grid-area: gallery;
-    background-color: green;
 }
 
-.links {
-    grid-area: links;
-    background-color: orange;
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "gallery-image1 gallery-image2 gallery-image3 gallery-image4";
+    width: 100%;
+    height: 100%;
 }
+
+.gallery-image {
+    margin: 5px 5px 5px 0px;
+    ;
+}
+
+.gallery-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery-image1 {
+    background-image: url("../img/a7-white.jpg");
+    background-size: cover;
+    grid-area: gallery-image1;
+}
+
+#gallery-image2 {
+    background-image: url("../img/rs7-black.jpg");
+    background-size: cover;
+    grid-area: gallery-image2;
+}
+
+#gallery-image3 {
+    background-image: url("../img/rs6-white.jpg");
+    background-size: cover;
+    grid-area: gallery-image3;
+}
+
+#gallery-image4 {
+    background-image: url("../img/s8-black.jpg");
+    background-size: cover;
+    grid-area: gallery-image4;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    background-color: #2f2f30;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas: "footer-text1 footer-text2 footer-text3" "footer-content1 footer-content2 footer-content3" "social ";
+    column-gap: 10px;
+    padding: 5px;
+}
+
+.footer-header {
+    font-size: 1.3vw;
+    color: #acacb5;
+    padding: 10px 0px;
+}
+
+.footer-content {
+    font-size: 1.1vw;
+    color: #757575;
+}
+
+.social {
+    display: flex;
+    background-color: yellow;
+    justify-content: space-around;
+    padding: 6px;
+}
+
+#footer-text1 {}
+
+#footer-text2 {}
+
+#footer-text3 {}
+
+#footer-content1 {}
+
+#footer-content2 {}
+
+#footer-content3 {}

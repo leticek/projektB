@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIA - Projekt B</title>
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <script src="./js/lightbox-plus-jquery.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,7 +18,13 @@
                 <div class="nav-items">
                     <ul>
                         <li>HOME</li>
-                        <li>ARTICLES</li>
+                        <li>
+                            ARTICLES
+                            <ul class="dropdown">
+                                <li class="dropdown-item"><a href="#">Recenze RS7</a></li>
+                                <li class="dropdown-item"><a href="#">Odhalení e-tron GT</a></li>
+                            </ul>
+                        </li>
                         <li>CONTACT US</li>
                     </ul>
                 </div>
@@ -47,7 +55,7 @@
                             <div class="content-item-wrapper">
                                 <div class="content-item">
                                     <div>
-                                        <img src="https://img.icons8.com/pastel-glyph/23/000000/car--v2.png" />
+                                        <img src="https://img.icons8.com/pastel-glyph/32/000000/car--v2.png" />
                                         <strong>700+</strong><br />
                                         <p>Za 3 roky na trhu jsme našim zákazníkům zprostředkovali více jak 700 vozidel
                                         </p>
@@ -59,10 +67,10 @@
                             <div class="content-item-wrapper">
                                 <div class="content-item">
                                     <div>
-                                        <img src="https://img.icons8.com/pastel-glyph/23/000000/car--v2.png" />
+                                        <img src="https://img.icons8.com/pastel-glyph/32/000000/warehouse-1.png" />
                                         <strong>120+</strong><br />
                                         <p>Díky naším dvěma showroomum máme na skladě více jak 120 vozidel a další jsme
-                                            schopni zařídit na objednávku
+                                            schopni objednat
                                         </p>
                                     </div>
                                 </div>
@@ -72,7 +80,7 @@
                             <div class="content-item-wrapper">
                                 <div class="content-item">
                                     <div>
-                                        <img src="https://img.icons8.com/pastel-glyph/23/000000/car--v2.png" />
+                                        <img src="https://img.icons8.com/ios/32/000000/smiling-face-with-heart.png" />
                                         <strong>98%</strong><br />
                                         <p>Naše špičková péče o zákazníky a pečlivý výběr vozidel se odráží na
                                             spokojenosti zákazníků
@@ -83,13 +91,66 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery"></div>
-                <div class="links"></div>
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <div class="gallery-image" id="gallery-image1">
+                            <a class="gallery-link" href="./img/a7-white.jpg" data-lightbox="image-1"
+                                data-title="My caption"></a>
+
+                        </div>
+                        <div class="gallery-image" id="gallery-image2">
+                            <a class="gallery-link" href="./img/rs7-black.jpg" data-lightbox="image-1"
+                                data-title="My caption"></a>
+                        </div>
+                        <div class="gallery-image" id="gallery-image3">
+                            <a class="gallery-link" href="./img/rs6-white.jpg" data-lightbox="image-1"
+                                data-title="My caption"></a>
+                        </div>
+                        <div class="gallery-image" id="gallery-image4">
+                            <a class="gallery-link" href="./img/s8-black.jpg" data-lightbox="image-1"
+                                data-title="My caption"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
         <footer>
-            Footer
+            <div class="footer-container">
+                <div class="footer-header" id="footer-text1">Informace</div>
+                <div class="footer-header" id="footer-text1">Poslední články</div>
+                <div class="footer-header" id="footer-text1">Newsletter</div>
+                <div class="footer-content" id="footer-content1">Tento web vznikl jako studentská práce na VŠB-TUO.
+                    Autorem je Adam Śmieja student 3. ročníku bakalářského studia. </div>
+                <div class="footer-content" id="footer-content2">
+                    <div class="article">
+                        <div class="footer-header">
+                            Recenze nové RS7
+                            <div class="footer-content">
+                                Podařilo se nám získat k internímu testování novou 600 koňovou bestii z Ingolstadtu. V
+                                článku se podíváme jízdní vlastnosti, výbavu a srovnání s konkurencí.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="footer-header">
+                            Byl odhalen e-tron GT
+                            <div class="footer-content">
+                                Elektrické Grand Tourismo Audi e-tron GT bude prvním modelem značky, jehož výroba bude
+                                probíhat v Německu. O výrobní linku se přitom podělí s Audi R8.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content" id="footer-content3">
+                    <input type="email" name="Newsletter" id="newsletter-signup" placeholder="E-mailová adresa">
+                    <button type="submit" id="signup">Přihlásit se</button>
+                </div>
+            </div>
+            <div class="social"><img src="https://img.icons8.com/metro/20/000000/facebook-new--v2.png" /><img
+                    src="https://img.icons8.com/metro/20/000000/twitter.png" /><img
+                    src="https://img.icons8.com/metro/20/000000/linkedin.png" /><img
+                    src="https://img.icons8.com/metro/20/000000/instagram-new.png" /></div>
         </footer>
         <div class="sidebar-right"></div>
     </div>
