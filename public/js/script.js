@@ -17,21 +17,23 @@ const calcTime = () => setInterval(() => {
 
 }, 1000);
 
-var images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var images = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 const updateSlider = () => {
     images = shuffle(images);
     var indexes = [];
     for(var i = 1; i < 5; i++){
         
-        var element = document.querySelector("#gallery-image" + i + ">a");
-        var imageIndex = Math.floor(Math.random() * Math.floor(11));
+        var divEl = document.querySelector("#gallery-image" + i);
+        var link = document.querySelector("#gallery-image" + i + ">a");
+        var imageIndex = Math.floor(Math.random() * Math.floor(8));
         while(indexes.includes(imageIndex)){
-            imageIndex = Math.floor(Math.random() * Math.floor(11));
+            imageIndex = Math.floor(Math.random() * Math.floor(8));
         }
         indexes.push(imageIndex);
         console.log(indexes);
-        var path = "./img/slider/" + indexes[i - 1] + ".jpg"
-        element.setAttribute("href", path);
+        var path = "./img/" + indexes[i - 1] + ".jpg"
+        divEl.style.backgroundImage = "url('" + path + "')";
+        link.setAttribute("href", path);
     }
     
 }
@@ -64,17 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
             dragging: false,
             zoomControl: false,
             scrollWheelZoom: false
-        }).setView([50.0562386, 14.536936], 17);
+        }).setView([49.8310486,18.1618058], 17);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
         }).addTo(mymap);
 
-        L.marker([50.0562386, 14.536936]).addTo(mymap);
+        L.marker([49.8310486,18.1618058]).addTo(mymap);
         calcTime();
     }
     if (url.includes("index.html")) {
-        //setInterval(updateSlider, 3000);
+        setInterval(updateSlider, 3000);
     }
 });
 
