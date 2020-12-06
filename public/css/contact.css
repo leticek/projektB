@@ -1,0 +1,39 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1.5fr 2fr;
+    grid-template-areas: "header" "map" "contact";
+}
+
+.header {
+    grid-area: header;
+    background-color: #fcc603;
+    padding: 1vw;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: green;
+}
+
+.header-container h1 {
+    font-size: 4vw;
+    margin-bottom: 1px;
+}
+
+.header-container p {
+    font-size: 1.4vw;
+    color: white;
+}
+
+#myMap {
+    height: 100%;
+}
+
+.contact-container{
+    
+}

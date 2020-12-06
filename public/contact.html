@@ -1,13 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIA - Projekt B</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <link rel="stylesheet" href="./css/lightbox.css">
     <script src="./js/lightbox-plus-jquery.js"></script>
     <link rel="stylesheet" href="./css/nav-footer.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -18,7 +26,7 @@
                 <div class="nav-logo"><img src="./img/header-logo.png" alt=""></div>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="./index.html">Domů</a></li>
+                        <a href="./index.html">Domů</a>
                         <li>
                             ARTICLES
                             <ul class="dropdown">
@@ -36,68 +44,18 @@
             <div class="main-container">
                 <div class="header">
                     <div class="header-container">
-                        <div class="header-left">
-                            <div class="header-left-content">
-                                <div>
-                                    <h1>Najdeme pro Vás to správné Audi</h1>
-                                    <p class="header-left-note">Naši certifikovaní odborníci Vám pomohou s výběrem toho
-                                        pravého vozu přímo pro
-                                        Vás</p>
-                                    <input class="contact-us-button" type="button" value="Konaktujte nás">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="header-right"><img src="./img/header-rs7.png" alt=""></div>
+                        <h1>Kontakt se zákazníky je pro nás na 1. místě</h1>
+                        <p>Stejně tak jako jejich spokojenost</p>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-container">
-                        <div id="content-item1">
-                            <div class="content-item">
-                                <img src="https://img.icons8.com/pastel-glyph/32/000000/car--v2.png" />
-                                <strong>700+</strong><br />
-                                <p>Za 3 roky na trhu jsme našim zákazníkům zprostředkovali více jak 700 vozidel
-                                </p>
-                            </div>
-                        </div>
-                        <div id="content-item2">
-                            <div class="content-item">
-                                <img src="https://img.icons8.com/pastel-glyph/32/000000/warehouse-1.png" />
-                                <strong>120+</strong><br />
-                                <p>Díky naším dvěma showroomum máme na skladě více jak 120 vozidel a další jsme
-                                    schopni objednat
-                                </p>
-                            </div>
-                        </div>
-                        <div id="content-item3">
-                            <div class="content-item">
-                                <img src="https://img.icons8.com/ios/32/000000/smiling-face-with-heart.png" />
-                                <strong>98%</strong><br />
-                                <p>Naše špičková péče o zákazníky a pečlivý výběr vozidel se odráží na
-                                    spokojenosti zákazníků
-                                </p>
-                            </div>
-                        </div>
+                <div class="map">
+                    <div class="map-container" id="myMap">
                     </div>
                 </div>
-                <div class="gallery">
-                    <div class="gallery-container">
-                        <div class="gallery-image" id="gallery-image1">
-                            <a class="gallery-link" href="./img/a7-white.jpg" data-lightbox="image-1"
-                                data-title="My caption"></a>
-                        </div>
-                        <div class="gallery-image" id="gallery-image2">
-                            <a class="gallery-link" href="./img/rs7-black.jpg" data-lightbox="image-1"
-                                data-title="My caption"></a>
-                        </div>
-                        <div class="gallery-image" id="gallery-image3">
-                            <a class="gallery-link" href="./img/rs6-white.jpg" data-lightbox="image-1"
-                                data-title="My caption"></a>
-                        </div>
-                        <div class="gallery-image" id="gallery-image4">
-                            <a class="gallery-link" href="./img/s8-black.jpg" data-lightbox="image-1"
-                                data-title="My caption"></a>
-                        </div>
+                <div class="contact">
+                    <div class="contact-container">
+                        <div class="contact-form"></div>
+                        <div class="contact-info"></div>
                     </div>
                 </div>
             </div>
@@ -142,6 +100,7 @@
         </footer>
         <div class="sidebar-right"></div>
     </div>
+
 </body>
 
 </html>
