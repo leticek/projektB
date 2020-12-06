@@ -5,14 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIA - Projekt B</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
     <link rel="stylesheet" href="./css/nav-footer.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/article.css">
     <script src="./js/script.js"></script>
 </head>
 
@@ -40,49 +34,59 @@
 
         <main>
             <div class="main-container">
-                <div class="header">
-                    <div class="header-container">
-                        <h1>Kontakt se zákazníky je pro nás na 1. místě</h1>
-                        <p>Stejně tak jako jejich spokojenost</p>
-                    </div>
-                </div>
-                <div class="map">
-                    <div class="map-container" id="myMap">
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contact-container">
-                        <div class="contact-form">
-                            <h2>Buďme v kontaktu!</h2>
-                            <p>
-                                Naším cílem je poskytovat jen ty nejlepší služby v oblasti prodeje automobilů, abyste na
-                                den nákupu Vašeho nového vozu rádi vzpomínali a v případě další koupě se opět s plnou
-                                důvěrou obrátili právě na nás.
-                            </p>
-                            <div>
-                                <form action="" onsubmit="">
-                                    <label for="ta"><strong>Jméno</strong></label><br>
-                                    <input required type="text" name="" placeholder="Jméno"><br>
-                                    <label for="ta"><strong>E-mail</strong></label><br>
-                                    <input required type="email" name="" placeholder="E-mail"><br>
-                                    <label for="ta"><strong>Zpráva</strong></label><br>
-                                    <textarea required name="ta" id="ta" cols="50" rows="7"></textarea><br>
-                                    <button type="submit">Odeslat</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="contact-info">
-                            <h2>Kde nás najdete?</h2>
-                            <p>
-                                17. listopadu 2172/15, 708 00 Ostrava <br>
-                                +420 123 456 789 <br>
-                                adam.smieja.st@vsb.cz <br>
-                            </p>
-                            <h2>Další událost?</h2>
-                            <p>Do Vánoc nám zbývá <span id="time-left"></span></p>
-                        </div>
-                    </div>
-                </div>
+                <h1>Odhalení e-tron GT</h1>
+                <p>
+                    <span>
+                        <img src="https://img.icons8.com/pastel-glyph/14/000000/clock--v1.png" />
+                        7.12.2020
+                    </span>
+                    <span>
+                        <img src="https://img.icons8.com/cotton/16/000000/person-male--v2.png" />
+                        Expert Jenda
+                    </span>
+                    <span>
+                        <img src="https://img.icons8.com/material-sharp/16/000000/tags.png" />
+                        Novinky, Koncept, Elektromobilita
+                    </span>
+                    <img class="article-header" src="./img/etron-article-header.jpg">
+                <p>
+                    Audi poprvé prezentovala koncept svého elektrického GTčka již během autosalonu Los Angeles v roce
+                    2018, přičemž tou dobou uváděla, že sériovou produkci zahájí koncem roku 2020. Ten se přitom pomalu
+                    blíží a tak není divu, že Audi přispěchala s kupou novinek. Od fotografií předprodukčního vozu, přes
+                    videa z vývoje, informace o výrobě až po ukázku nově vyvinutého umělého zvuku.
+
+                    Začněme od snímků předprodukčního modelu, prozatím důkladně zabaleného do maskovací fólie, který se
+                    na první pohled drží tvarů konceptu z roku 2018. Z praktických důvodů se ale nejspíš dočkáme větších
+                    zrcátek nebo tradičních klik. Zajímavostí je také dvojice nabíjecích zásuvek na předních blatnících,
+                    což je prvek, který zřejmě Audi okoukalo od Porsche Taycan.
+                </p>
+
+                <p>
+                    Snímky zatím odhalují pouze technický prototyp, který by se mohl do produkční fáze ještě trochu
+                    změnit, rozhodně bychom ale nečekali nic výrazného. Automobilka už totiž připravuje výrobu, která by
+                    měla být spuštěna koncem roku.
+
+                    Produkce by přitom měla probíhat v závodu Böllinger Höffe v Německu, kde se dnes vyrábí
+                    supersportovní model R8. Audi kvůli tomu musela celý závod upravit, přidat nové vybavení a
+                    samozřejmě přeškolit pracovníky, přesto se oba vozy budou pohybovat na stejné lince. Výroba
+                    elektromobilu a sporťáku s V10 bok po boku je přitom celkem unikátní záležitostí.
+                </p>
+
+                <p>
+                    O samotné technice e-tronu GT zatím automobilka mlčí, poměrně dost se však rozhovořila o nově
+                    vyvinutém umělém zvuku, který musí všechny nové elektromobily vydávat pro varování chodců. Kvůli
+                    tomu bude e-tron GT osazen rovnou dvěma velkými hlasitými reproduktory (jeden vpředu i vzadu),
+                    zatímco reproduktory uvnitř mají vytvářet emocionální zvukový zážitek pro posádku.
+
+                    Zajímavější než technika kolem zvuku však nejspíš bude technika pod kapotou, která by mohla být hned
+                    od začátku dostupná přinejmenším ve dvou verzích. Markus Duesmann, globální šéf značky Audi, totiž
+                    potvrdil, že společně s klasickým e-tronem GT bude představena i jeho ostřejší verze RS. Bližší
+                    detaily ovšem nezmínil.
+                </p>
+
+                <a
+                    href="https://www.auto.cz/audi-poodhaluje-novy-e-tron-gt-poslechnete-si-jeho-umely-zvuk-136346">ZDROJ</a>
+                </p>
             </div>
         </main>
 

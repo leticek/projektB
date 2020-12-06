@@ -13,6 +13,7 @@
     column-gap: 0.2fr;
 }
 
+
 .header {
     grid-area: header;
     background-color: #fcc603;
